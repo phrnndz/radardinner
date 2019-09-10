@@ -1,0 +1,14 @@
+<h2>Busqueda: {{termino}}</h2>
+<hr>
+<div *ngIf="comerciosBuscados.length === 0" class="alert alert-info" role="alert">
+
+    <p>La búsqueda no produjo resultados</p>
+
+</div>
+
+
+<div class="card-columns">
+
+    <app-comercio-tarjeta [comercio]="comercio" [index]="comercio.idx" *ngFor="let comercio of comerciosBuscados;"></app-comercio-tarjeta>
+
+</div>

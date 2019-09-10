@@ -1,0 +1,4 @@
+<div class="card-columns">
+    <!-- *ngFor="let comercio of comercios; let i = index" -->
+    <app-comercio-tarjeta (comercioSeleccionado)="verComercio($event)" [comercio]="comercio" [index]="i" *ngFor="let comercio of comercios; let i = index"></app-comercio-tarjeta>
+</div>

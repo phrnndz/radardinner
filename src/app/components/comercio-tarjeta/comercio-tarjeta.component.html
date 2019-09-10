@@ -1,0 +1,6 @@
+<div class="card animated fadeIn fast">
+    <img [src]="comercio.img" [alt]="comercio.nombre" class="card-img-top" alt="...">
+    <h5 class="card-title">{{ comercio.nombre}}</h5>
+    <p class="card-text"><small class="text-muted">{{ comercio.ubicacion }}</small></p>
+    <button type="button" class="btn btn-dark btn-lg btn-block" [routerLink]="['/comercio',i]" (click)="verComercio()">Ir a {{ comercio.nombre}}</button>
+</div>

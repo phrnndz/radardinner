@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-md-12 px-0">
+        <a href="comercios">Volver</a>
+        <h1 class="display-4 font-italic">{{comercio.nombre}}</h1>
+        <p class="lead my-3">{{comercio.bio}}</p>
+        <p class="lead mb-0">{{comercio.ubicacion}}</p>
+    </div>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" [src]='mapaComercio' allowfullscreen></iframe>
+    </div>
+    <div class="text-center">
+        <img [src]="comercio.img" alt="Responsive image">
+    </div>
+
+</div>
